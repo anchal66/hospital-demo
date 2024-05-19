@@ -1,6 +1,5 @@
 package com.mohit.hospitalmagement.enity;
 
-import com.mohit.hospitalmagement.enums.City;
 import com.mohit.hospitalmagement.enums.Symptom;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;

@@ -1,7 +1,5 @@
 package com.mohit.hospitalmagement.controller;
 
-import com.mohit.hospitalmagement.dto.DoctorRequest;
-import com.mohit.hospitalmagement.dto.DoctorResponse;
 import com.mohit.hospitalmagement.dto.PatientRequest;
 import com.mohit.hospitalmagement.dto.PatientResponse;
 import com.mohit.hospitalmagement.service.PatientService;

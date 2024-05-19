@@ -2,7 +2,6 @@ package com.mohit.hospitalmagement.dto;
 
 import com.mohit.hospitalmagement.enums.City;
 import com.mohit.hospitalmagement.enums.Speciality;
-import lombok.Builder;
 import lombok.Data;
 
 @Data

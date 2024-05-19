@@ -1,6 +1,5 @@
 package com.mohit.hospitalmagement.service;
 
-import com.mohit.hospitalmagement.dto.DoctorRequest;
 import com.mohit.hospitalmagement.dto.DoctorResponse;
 import com.mohit.hospitalmagement.dto.SuggestionResponse;
 import com.mohit.hospitalmagement.enity.Doctor;
@@ -56,20 +55,12 @@ public class SuggestionServiceImpl implements SuggestionService {
     }
 
     private Speciality getSpeciality(Symptom symptom) {
-        switch (symptom){
-            case ARTHRITIS:
-            case BACK_PAIN:
-            case TISSUE_INJURIES:
-                return Speciality.ORTHOPEDIC;
-            case DYSMENORRHEA:
-                return Speciality.GYNECOLOGY;
-            case SKIN_INFECTION:
-            case SKIN_BURN:
-                return Speciality.DERMATOLOGY;
-            case EAR_PAIN:
-                return Speciality.ENT;
-            default:
-                throw new IllegalArgumentException("Invalid data");
-        }
+        return switch (symptom) {
+            case ARTHRITIS, BACK_PAIN, TISSUE_INJURIES -> Speciality.ORTHOPEDIC;
+            case DYSMENORRHEA -> Speciality.GYNECOLOGY;
+            case SKIN_INFECTION, SKIN_BURN -> Speciality.DERMATOLOGY;
+            case EAR_PAIN -> Speciality.ENT;
+            default -> throw new IllegalArgumentException("Invalid data");
+        };
     }
 }

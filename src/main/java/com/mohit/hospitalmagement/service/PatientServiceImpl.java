@@ -1,9 +1,7 @@
 package com.mohit.hospitalmagement.service;
 
-import com.mohit.hospitalmagement.dto.DoctorResponse;
 import com.mohit.hospitalmagement.dto.PatientRequest;
 import com.mohit.hospitalmagement.dto.PatientResponse;
-import com.mohit.hospitalmagement.enity.Doctor;
 import com.mohit.hospitalmagement.enity.Patient;
 import com.mohit.hospitalmagement.repository.PatientRepository;
 import lombok.RequiredArgsConstructor;
